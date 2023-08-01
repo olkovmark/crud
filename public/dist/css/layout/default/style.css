@@ -7,7 +7,9 @@
 .input_component label {
   color: rgb(108, 108, 108);
 }
-.input_component input {
+.input_component input,
+.input_component textarea {
+  resize: none;
   border-radius: 5px;
   border: 1px solid rgb(203, 203, 203);
   padding: 5px;
@@ -15,9 +17,18 @@
 .input_component .footer {
   color: rgb(178, 178, 178);
 }
+.input_component .big {
+  height: 60px;
+}
+
+:root {
+  --color-blue: #1696ff;
+  --color-light: #b5b5b5;
+}
 
 body {
   font-family: "Fredoka", sans-serif;
+  padding: 40px;
 }
 
 .btn {
@@ -40,9 +51,9 @@ body {
 }
 
 .card {
-  margin: 20px;
   padding: 20px;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

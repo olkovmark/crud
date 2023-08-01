@@ -1,6 +1,12 @@
 @use '../../component/Input/Input.scss';
+
+:root {
+  --color-blue: #1696ff;
+  --color-light: #b5b5b5;
+}
 body {
   font-family: 'Fredoka', sans-serif;
+  padding: 40px;
 }
 
 .btn {
@@ -24,7 +30,7 @@ body {
 }
 
 .card {
-  margin: 20px;
   padding: 20px;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
 }

@@ -1,0 +1,16 @@
+.form {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  &_block {
+    display: flex;
+    gap: 10px;
+  }
+}
+.form_title {
+  font-size: 24px;
+}
+.action_list {
+  display: flex;
+  justify-content: space-between;
+}
