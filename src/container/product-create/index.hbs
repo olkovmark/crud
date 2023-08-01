@@ -1,0 +1,13 @@
+<div class='container'>
+  <form method='POST' action='/product-create' class='form'>
+    <h1 class='form_title'>Info</h1>
+    <div>
+      {{>Input name="name" text="Name"}}
+      {{>Input name="price" text ="Price"}}
+    </div>
+      {{>Input big=true name="description" text="Short description" footer="
+          It is displayed in the product card
+          Create"}}
+      <button class='button'>Create product</button>
+  </form>
+</div>
