@@ -1,12 +1,9 @@
 <div class='input_component'>
   <label for={{name}}>{{text}}</label>
-  <input name={{name}} type='text' />
   {{#if big}}
     <input name={{name}} type='text' />
+    <p class='footer'>{{footer}}{{Big}}</p>
   {{else}}
-    <div class='big'>
-      <input name={{name}} type='text' />
-      <p>{{footer}}</p>
-    </div>
+    <input name={{name}} type='text' />
   {{/if}}
 </div>

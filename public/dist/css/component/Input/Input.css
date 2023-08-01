@@ -1,5 +1,19 @@
 .input_component {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+.input_component label {
+  color: rgb(108, 108, 108);
+}
+.input_component input {
+  border-radius: 5px;
+  border: 1px solid rgb(203, 203, 203);
+  padding: 5px;
+}
+.input_component .footer {
+  color: rgb(178, 178, 178);
 }
 
 /*# sourceMappingURL=Input.css.map */
