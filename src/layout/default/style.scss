@@ -1,3 +1,37 @@
+
+@use '../../component/Input/Input.scss';
+
+:root {
+  --color-blue: #1696ff;
+  --color-light: #b5b5b5;
+}
 body {
   font-family: 'Fredoka', sans-serif;
+  padding: 40px;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: rgb(45, 164, 255);
+  border-radius: 5px;
+  padding: 10px 15px;
+  height: min-content;
+
+  &:hover {
+    opacity: 0.75;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.btn-error {
+  background-color: red;
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
 }

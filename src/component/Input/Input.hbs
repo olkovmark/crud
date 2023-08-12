@@ -1,0 +1,14 @@
+<div class='input_component'>
+  <label for={{name}}>{{text}}</label>
+  {{#if big}}
+    <textarea
+      class='big'
+      name={{name}}
+      type='text'
+    >{{value}}
+    </textarea>
+    <p class='footer'>{{footer}}{{Big}}</p>
+  {{else}}
+    <input value='{{value}}' name={{name}} />
+  {{/if}}
+</div>
