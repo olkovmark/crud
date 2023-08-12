@@ -1,0 +1,15 @@
+.form {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+}
+.form_block {
+  display: flex;
+  gap: 10px;
+}
+
+.form_title {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .info {
+  display: grid;
+  gap: 20px;
+}
+.container .info .title {
+  font-size: 16px;
+}
+.container .info .description {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

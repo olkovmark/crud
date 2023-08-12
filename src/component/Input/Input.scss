@@ -1,0 +1,23 @@
+.input_component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+
+  label {
+    color: rgb(108, 108, 108);
+  }
+  input,
+  textarea {
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgb(203, 203, 203);
+    padding: 5px;
+  }
+  .footer {
+    color: rgb(178, 178, 178);
+  }
+  .big {
+    height: 60px;
+  }
+}
