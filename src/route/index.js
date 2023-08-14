@@ -2,7 +2,6 @@ const express = require('express')
 
 const router = express.Router()
 
-
 // ===============================
 class User {
   static #list = []
@@ -45,6 +44,7 @@ class User {
 router.get('/', function (req, res) {
   User.add(new User('123@123', '123', '123'))
   const list = User.getList()
+})
 
 class Product {
   constructor(name, price, description) {
@@ -109,7 +109,6 @@ router.get('/', function (req, res) {
       },
     },
   })
-
 })
 router.get('/product-create', function (req, res) {
   res.render('product-create', {
@@ -144,7 +143,6 @@ router.post('/user-create', function (req, res) {
   const { email, login, password } = req.body
   const user = new User(email, login, password)
 
-
   User.add(user)
 
   res.render('success-info', {
@@ -155,19 +153,17 @@ router.post('/user-create', function (req, res) {
 
 router.post('/update-email', function (req, res) {
   const { id, email, password } = req.body
-  console.log(req.body)
 
   const response = User.updateEmail(
     Number(id),
     email,
     password,
   )
-
-  console.log(response)
-
   res.render('success-info', {
     style: 'success-info',
     info: response,
+  })
+})
 
 router.get('/product-list', function (req, res) {
   res.render('product-list', {
@@ -211,6 +207,7 @@ router.post('/product-edit', function (req, res) {
     style: 'alert',
   })
 })
+
 router.get('/product-delete', function (req, res) {
   const { id } = req.query
   const response = Product.deleteById(id)
@@ -230,7 +227,6 @@ router.get('/product-delete', function (req, res) {
   res.render('alert', {
     info,
     style: 'alert',
-
   })
 })
 
