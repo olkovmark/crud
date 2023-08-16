@@ -1,0 +1,27 @@
+<section class='purchase_list'>
+  <h1 class='title'>Ваші замовлення</h1>
+  <div class='list'>
+
+    {{#each data.purchaseList}}
+
+      <form action='/purchase-info?id={{id}}' method='post'>
+        <button class='purchase'>
+          <div class='id'>ID: {{id}}</div>
+          <div class='list_item'>
+            <span class='title'>Назва товару</span>
+            <span class='name'>{{name}}</span>
+          </div>
+          <div class='list_item'>
+            <span class='title'>Сума замовлення</span>
+            <span class='name'>{{fullPrice}}</span>
+          </div>
+          <div class='list_item'>
+            <span class='title'>Нараховані бонуси</span>
+            <span class='name'>{{bonus}}</span>
+          </div>
+        </button>
+      </form>
+
+    {{/each}}
+  </div>
+</section>

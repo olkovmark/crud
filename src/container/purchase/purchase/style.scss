@@ -1,0 +1,20 @@
+.purchase {
+  display: grid;
+  gap: 12px;
+  .title {
+    font-size: 36px;
+    color: blue;
+  }
+  .double_field {
+    display: flex;
+  }
+
+  .field {
+    & > span:first-child {
+      color: grey;
+    }
+    flex: 1;
+    display: grid;
+    gap: 5px;
+  }
+}

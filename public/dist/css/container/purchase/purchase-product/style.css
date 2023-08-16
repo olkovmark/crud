@@ -1,0 +1,33 @@
+.purchase_product {
+  display: grid;
+  gap: 40px;
+}
+.purchase_product .product {
+  display: flex;
+  padding: 0 20px;
+}
+.purchase_product .product div,
+.purchase_product .product form {
+  flex: 1;
+}
+.purchase_product .product .content_block {
+  padding: 60px;
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 30px;
+}
+.purchase_product .other {
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+.purchase_product .other .other_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.purchase_product .other .other_list .product_card {
+  max-width: 30vw;
+}
+
+/*# sourceMappingURL=style.css.map */
