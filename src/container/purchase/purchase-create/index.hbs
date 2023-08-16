@@ -1,0 +1,111 @@
+<section class='card purchase_create'>
+
+  <h1 class='title'>Ваше замовлення</h1>
+
+  <div class='product_info'>
+    <span class='product_name'>{{productName}}
+      Кількість({{amount}})</span>
+    <span class='price'>{{fullPrice}} грн</span>
+  </div>
+  <div class='delivery'>
+    <span class='delivery_text'>Вартість доставки</span>
+    <span class='delivery_sum'>{{delivery}} грн</span>
+  </div>
+  <form
+    class='form'
+    action='/purchase?id={{id}}'
+    method='post'
+  >
+    <h3 class='purchase_title'>Оформлення замовлення</h3>
+    <div class='client_info'>
+      <div class='client_firstName'>
+        <label class='form-label'>Ім'я</label>
+        <input
+          value='Mark'
+          type='text'
+          class='form-control'
+          name='name'
+        />
+      </div>
+      <div class='client_secondName'>
+        <label class='form-label'>Прізвище</label>
+        <input
+          value='Olkov'
+          type='text'
+          class='form-control'
+          name='secondName'
+        />
+      </div>
+    </div>
+    <div class='client_contact'>
+      <div class='client_phone'>
+        <label class='form-label'>Телефон</label>
+        <input
+          value='089800000'
+          type='phone'
+          class='form-control'
+          name='phone'
+        />
+      </div>
+      <div class='client_mail'>
+        <label class='form-label'>Пошта</label>
+        <input
+          value='123124@ma.com'
+          type='mail'
+          class='form-control'
+          name='mail'
+        />
+      </div>
+    </div>
+    <div>
+      <div class='client_comment'>
+        <label class='form-label'>Коментар</label>
+        <textarea
+          type='text'
+          class='form-control'
+          name='comment'
+        >коментар</textarea>
+      </div>
+    </div>
+
+    <div class='share'>
+      <div class='bonus'>
+        <label class='form-label'>Списати бонуси</label>
+        <input
+          value='10'
+          type='text'
+          class='form-control'
+          name='use_bonus'
+        />
+      </div>
+      <div class='promo'>
+        <label class='form-label'>Промо-код</label>
+        <input
+          value='asdqwer'
+          type='text'
+          class='form-control'
+          name='promo'
+        />
+      </div>
+    </div>
+    <input
+      style='display: none;'
+      value='{{amount}}'
+      type='text'
+      name='amount'
+    />
+    <input
+      style='display: none;'
+      value='{{fullPrice}}'
+      type='text'
+      name='fullPrice'
+    />
+    <input
+      style='display: none;'
+      value='{{bonus}}'
+      type='text'
+      name='bonus'
+    />
+    <button class='btn btn-primary'>Оформити замовлення</button>
+  </form>
+</section>

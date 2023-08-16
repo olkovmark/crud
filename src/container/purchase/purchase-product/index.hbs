@@ -1,0 +1,43 @@
+<div class='purchase_product'>
+  <section class='product'>
+    {{#with product}}
+      <div class=''>
+        <img class='img-thumbnail' src='{{img}}' alt='' />
+      </div>
+      <form
+      method="POST"
+      action="/purchase-create?id={{id}}"
+       class='content_block'>
+        <h1 class='h1'>{{name}}</h1>
+        <hr />
+        <p>{{description}}</p>
+        <hr class='' />
+        
+        <div class=''>
+          <label  class='form-label'>Кількість
+            товару</label>
+          <input
+          name="amount"
+            value='1'
+            type='number'
+            class='form-control'
+          />
+        </div>
+        <button class='btn btn-primary' href=''>Купити зараз</button>
+      </form>
+    {{/with}}
+  </section>
+  <section class='other'>
+{{#with other}}
+    <h2 class="h2">Інші товари</h2>
+    <p>{{category}}</p>
+
+    <div class='other_list'>
+      {{#each productList}}
+          {{>productCard}}
+      {{/each}}
+    </div>
+  </section>
+  {{/with}}
+
+</div>

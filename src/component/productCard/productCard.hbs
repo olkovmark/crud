@@ -1,12 +1,22 @@
 <div class='product_card card'>
 
-  <div class='card_body'>
+  <div class='card_body row g-4 text-start'>
+
+    <img
+      src='{{img}}'
+      class='img-thumbnail'
+      alt='{{img}}'
+    />
     <h3 class='product_name'>{{name}}</h3>
     <p class='product_description'>{{description}}</p>
     <p class='product_id'>ID:{{id}}</p>
   </div>
-  <div class='card_footer'>
+  <div class='card_footer row'>
     <h4 class='product_price'>{{price}}$</h4>
-    <a href='/product-edit?id={{id}}'>Update</a>
+    {{!-- <a href='/product-edit?id={{id}}'>Update</a> --}}
   </div>
+  <a
+    href='/purchase-product?id={{id}}'
+    class='btn btn-primary'
+  >Купити</a>
 </div>

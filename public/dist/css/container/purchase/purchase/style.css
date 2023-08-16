@@ -1,0 +1,21 @@
+.purchase {
+  display: grid;
+  gap: 12px;
+}
+.purchase .title {
+  font-size: 36px;
+  color: blue;
+}
+.purchase .double_field {
+  display: flex;
+}
+.purchase .field {
+  flex: 1;
+  display: grid;
+  gap: 5px;
+}
+.purchase .field > span:first-child {
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
