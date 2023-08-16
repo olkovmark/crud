@@ -1,0 +1,28 @@
+.purchase_list > .title {
+  font-size: 36px;
+  color: cornflowerblue;
+}
+.purchase_list .list {
+  display: grid;
+  gap: 10px;
+}
+.purchase_list .list .purchase {
+  width: 100%;
+  border-bottom: 2px solid rgba(171, 171, 171, 0.2);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.purchase_list .list .purchase .id {
+  color: gray;
+}
+.purchase_list .list .purchase .list_item {
+  display: grid;
+  gap: 10px;
+}
+.purchase_list .list .purchase .list_item .title {
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */

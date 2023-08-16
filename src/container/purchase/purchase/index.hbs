@@ -1,0 +1,58 @@
+<section class='card purchase'>
+  {{#with data.purchase}}
+    <h1 class='title'>Інформація про замовлення</h1>
+    <div class='field'>
+      <span>ID</span>
+      <span>{{id}}</span>
+    </div>
+    <hr />
+    <div class='double_field'>
+      <div class='field'>
+        <span>Ім'я:</span>
+        <span>{{client.name}}</span>
+      </div>
+      <div class='field'>
+        <span>Прізвище</span>
+        <span>{{client.second_name}}</span>
+      </div>
+    </div>
+    <div class='double_field'>
+      <div class='field'>
+        <span>Телефон</span>
+        <span>{{client.phone}}</span>
+      </div>
+      <div class='field'>
+        <span>Електронна пошта:</span>
+        <span>{{client.mail}}</span>
+      </div>
+    </div>
+    <hr />
+    <div class='field'>
+      <span>Коментар</span>
+      <span>{{client.comment}}</span>
+    </div>
+    <div class='field'>
+      <span>Назва товару</span>
+      <span>{{product.name}}</span>
+    </div>
+    <hr />
+
+    <div class='double_field'>
+      <div class='field'>
+        <span>Вартість товарів</span>
+        <span>{{product.fullPrice}}</span>
+      </div>
+      <div class='field'>
+        <span>Вартість доставки:</span>
+        <span>{{product.delivery}}</span>
+      </div>
+    </div>
+    <div class='field'>
+      <span>Нараховані бонуси:</span>
+      <span>{{product.bonus}}</span>
+    </div>
+    <hr />
+    <a href='/purchase-list' class='btn btn-primary'>До
+      списку</a>
+  {{/with}}
+</section>

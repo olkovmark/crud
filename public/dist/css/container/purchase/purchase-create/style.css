@@ -1,0 +1,39 @@
+.purchase_create {
+  display: grid;
+  gap: 20px;
+}
+.purchase_create .title {
+  font-size: 36px;
+  color: rgb(78, 78, 247);
+  margin-bottom: 40px;
+}
+.purchase_create .product_info {
+  display: flex;
+  justify-content: space-between;
+}
+.purchase_create .product_info .product_name {
+  font-weight: bold;
+}
+.purchase_create .delivery {
+  display: flex;
+  justify-content: space-between;
+}
+.purchase_create .form {
+  display: grid;
+  gap: 20px;
+}
+.purchase_create .form .purchase_title {
+  font-size: 24px;
+  color: rgb(78, 78, 247);
+}
+.purchase_create .form > div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-around;
+}
+.purchase_create .form > div > div {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

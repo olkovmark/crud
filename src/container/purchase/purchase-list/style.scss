@@ -1,0 +1,28 @@
+.purchase_list {
+  & > .title {
+    font-size: 36px;
+    color: cornflowerblue;
+  }
+  .list {
+    display: grid;
+    gap: 10px;
+    .purchase {
+      width: 100%;
+      border-bottom: 2px solid rgb(171, 171, 171, 0.2);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .id {
+        color: gray;
+      }
+      .list_item {
+        display: grid;
+        gap: 10px;
+        .title {
+          color: gray;
+        }
+      }
+    }
+  }
+}
